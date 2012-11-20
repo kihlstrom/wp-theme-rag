@@ -421,4 +421,8 @@ img
 		background: #f6e128;
 		color: #1e1e1e;
 	}
+	.footer .inside
+	{
+		max-width: 70em;
+	}
 }
