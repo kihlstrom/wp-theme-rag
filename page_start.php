@@ -24,6 +24,9 @@ if( have_posts() ) {
 					<?php echo get_image( 'start_page_image' ); ?>
 					<h2>
 <?php
+		function title_row_join( $row ) {
+			return( implode( ' ', $row ) );
+		};
 		$title_original = get_the_title();
 		$title_word = explode( ' ', $title_original );
 		$title_word_count = count( $title_word );
@@ -31,9 +34,7 @@ if( have_posts() ) {
 			$title_html = '<span>' . $title_original . '</span>';
 		} else {
 			$title_row = array_chunk( $title_word, 4 );
-			$title_html = '<span>' . implode( '</span><span>', array_map( function( $row ) {
-				return( implode( ' ', $row ) );
-			}, $title_row ) ) . '</span>';
+			$title_html = '<span>' . implode( '</span><span>', array_map( 'title_row_join', $title_row ) ) . '</span>';
 		}
 		echo $title_html;
 ?>
