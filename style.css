@@ -298,8 +298,6 @@ img
 
 .footer-banner
 {
-	padding: 2em 0;
-	border-top: 1px solid #383838;
 	overflow: hidden;
 }
 
@@ -344,6 +342,11 @@ img
 	.post .heading h2
 	{
 		font-size: 32px;
+	}
+	.footer-banner
+	{
+		padding: 2em 0;
+		border-top: 1px solid #383838;
 	}
 	.footer-banner img
 	{
