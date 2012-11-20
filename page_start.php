@@ -24,9 +24,6 @@ if( have_posts() ) {
 					<?php echo get_image( 'start_page_image' ); ?>
 					<h2>
 <?php
-		function title_row_join( $row ) {
-			return( implode( ' ', $row ) );
-		};
 		$title_original = get_the_title();
 		$title_word = explode( ' ', $title_original );
 		$title_word_count = count( $title_word );

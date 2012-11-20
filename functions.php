@@ -9,4 +9,8 @@ function insert_jquery() {
    wp_enqueue_script( 'jquery' );
 }
 
+function title_row_join( $row ) {
+	return( implode( ' ', $row ) );
+}
+
 ?>

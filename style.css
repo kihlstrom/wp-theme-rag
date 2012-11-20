@@ -223,6 +223,11 @@ img
 ** post
 ** -------- ---- -- -  -    -
 */
+.post + .post
+{
+	margin-top: 2em;
+}
+
 .post .heading
 {
 	min-height: 150px;
