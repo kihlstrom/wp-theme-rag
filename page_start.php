@@ -23,7 +23,20 @@ if( have_posts() ) {
 				<div class="heading">
 					<?php echo get_image( 'start_page_image' ); ?>
 					<h2>
-						<span><?php the_title(); ?></span>
+<?php
+		$title_original = get_the_title();
+		$title_word = explode( ' ', $title_original );
+		$title_word_count = count( $title_word );
+		if( $title_word_count <= 4 ) {
+			$title_html = '<span>' . $title_original . '</span>';
+		} else {
+			$title_row = array_chunk( $title_word, 4 );
+			$title_html = '<span>' . implode( '</span><span>', array_map( function( $row ) {
+				return( implode( ' ', $row ) );
+			}, $title_row ) ) . '</span>';
+		}
+		echo $title_html;
+?>
 					</h2>
 					<div class="date"><span><?php the_date(); ?></span></div>
 				</div>
