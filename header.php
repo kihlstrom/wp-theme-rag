@@ -4,7 +4,7 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title><?php wp_title( '' ); ?> - <?php bloginfo( 'name' ); ?></title>
+	<title><?php wp_title( ' - ', 1, 'right' ); ?><?php bloginfo( 'name' ); ?></title>
 	<script>document.documentElement.className = document.documentElement.className.replace( 'noscript', 'script' );</script>
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>">
 	<script type="text/javascript" src="<?php echo THEME_DIR; ?>/js/main.js" ></script>	
@@ -17,10 +17,7 @@
 	<div class="inside">
 		<h1><a href="#"><img src="<?php echo THEME_DIR; ?>/images/rag-logo145x108.png" width="145" height="108" alt="Real Art Group"><span>Real Art Group</span></a></h1>
 		<ul class="nav-main">
-			<li class="current_page_item"><a href="#">Blog</a></li>
-			<li><a href="#">Cases &amp; Concepts</a></li>
-			<li><a href="#">Archive</a></li>
-			<li><a href="#">About</a></li>
+			<?php wp_list_pages( 'sort_column=menu_order&depth=1&echo=1&title_li=' ); ?>
 		</ul>
 		<!--
 		<form id="header-form-search" method="get" action="">
