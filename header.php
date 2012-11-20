@@ -15,7 +15,7 @@
 
 <div class="header">
 	<div class="inside">
-		<h1><a href="#"><img src="images/rag-logo145x108.png" width="145" height="108" alt="Real Art Group"><span>Real Art Group</span></a></h1>
+		<h1><a href="#"><img src="<?php echo THEME_DIR; ?>/images/rag-logo145x108.png" width="145" height="108" alt="Real Art Group"><span>Real Art Group</span></a></h1>
 		<ul class="nav-main">
 			<li class="current_page_item"><a href="#">Blog</a></li>
 			<li><a href="#">Cases &amp; Concepts</a></li>
