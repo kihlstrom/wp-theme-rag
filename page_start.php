@@ -56,7 +56,7 @@ if( have_posts() ) {
 ?>
 		</div>
 		<div class="sidebar">
-			<p>sidebar</p>
+			<h2><span>Categories</span></h2>
 		</div>
 	</div>
 </div>

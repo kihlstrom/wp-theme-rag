@@ -205,7 +205,7 @@ img
 .main
 {
 	max-width: 37.5em;
-	margin: 0 auto;
+	margin: 0 auto 2em auto;
 }
 
 
@@ -281,6 +281,33 @@ img
 
 
 /* ---- -- -  -    -
+** sidebar
+** -------- ---- -- -  -    -
+*/
+.sidebar
+{
+	max-width: 37.5em;
+	margin: 0 auto 2em auto;
+}
+
+.sidebar h2
+{
+	padding-left: 1em;
+	border-bottom: 3px solid #1e1e1e;
+	font-family: 'Oswald', Arial, Helvetica, sans-serif;
+}
+
+.sidebar h2 span
+{
+	display: inline-block;
+	padding: 0.5em 1em;
+	background: #1e1e1e;
+	color: #fff;
+}
+
+
+
+/* ---- -- -  -    -
 ** footer
 ** -------- ---- -- -  -    -
 */
@@ -333,7 +360,6 @@ img
 .footer-smallprint p
 {
 	float: left;
-	-x-margin: 0 1em;
 	padding: 0 40px;
 	min-height: 28px;
 	font-size: 0.75em;
