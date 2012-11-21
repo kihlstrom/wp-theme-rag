@@ -300,13 +300,14 @@ img
 
 .footer-banner
 {
+	padding-bottom: 2em;
 	overflow: hidden;
 }
 
 .footer-banner img
 {
 	display: block;
-	margin: 0 auto 0.5em auto;
+	margin: 0 auto 1em auto;
 }
 
 .footer-banner h3
@@ -328,10 +329,10 @@ img
 	border-top: 1px solid #383838;
 }
 
-.footer-smallprint .copyright,
-.footer-smallprint .cookies
+.footer-smallprint p
 {
 	font-size: 0.75em;
+	line-height: 1.5;
 	text-align: center;
 }
 
