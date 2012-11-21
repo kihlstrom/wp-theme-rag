@@ -20,24 +20,11 @@ if( have_posts() ) {
 		the_post();
 ?>
 			<div class="post">
-				<div class="heading">
+				<a href="<?php the_permalink(); ?>"><div class="heading">
 					<?php echo get_image( 'start_page_image' ); ?>
-					<h2>
-<?php
-		$title_original = get_the_title();
-		$title_word = explode( ' ', $title_original );
-		$title_word_count = count( $title_word );
-		if( $title_word_count <= 4 ) {
-			$title_html = '<span>' . $title_original . '</span>';
-		} else {
-			$title_row = array_chunk( $title_word, 4 );
-			$title_html = '<span>' . implode( '</span><span>', array_map( 'title_row_join', $title_row ) ) . '</span>';
-		}
-		echo $title_html;
-?>
-					</h2>
+					<h2><?php echo rag_title_split( get_the_title() ); ?></h2>
 					<div class="date"><span><?php the_date(); ?></span></div>
-				</div>
+				</div></a>
 				<div class="intro">
 					<?php the_content(); ?>
 				</div>

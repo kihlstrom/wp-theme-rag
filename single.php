@@ -9,7 +9,11 @@
 	<div class="inside">
 		<div class="single">
 
-<?php the_title(); ?>
+				<div class="heading">
+					<?php echo get_image( 'start_page_image' ); ?>
+					<h2><?php echo rag_title_split( get_the_title() ); ?></h2>
+					<div class="date"><span><?php the_date(); ?></span></div>
+				</div>
 
 <?php the_content(); ?>
 
