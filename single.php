@@ -11,7 +11,7 @@
 
 				<div class="heading">
 					<?php echo get_image( 'start_page_image' ); ?>
-					<h2><?php echo rag_title_split( get_the_title() ); ?></h2>
+					<h2><?php echo rag_title_split( get_the_title(), 24 ); ?></h2>
 					<div class="date"><span><?php the_date(); ?></span></div>
 				</div>
 
