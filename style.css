@@ -308,7 +308,7 @@ img
 	float: left;
 	border-left: 4px solid #f6e128;
 	font-family: 'Oswald', Arial, Helvetica, sans-serif;
-	font-size: 48px;
+	font-size: 32px;
 	line-height: 1;
 	overflow: hidden;
 }
@@ -440,6 +440,14 @@ img
 	.post .heading h2
 	{
 		font-size: 32px;
+	}
+	.single .heading h2
+	{
+		font-size: 48px;
+	}
+	.single .heading h2 span
+	{
+		padding: 8px 16px;
 	}
 	.footer-banner
 	{
