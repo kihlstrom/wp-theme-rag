@@ -12,14 +12,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 
 /* ---- -- -  -    -
-** custom fonts
-** -------- ---- -- -  -    -
-*/
-@import url(http://fonts.googleapis.com/css?family=Quicksand:300,400,700|Oswald:400,300,700);
-
-
-
-/* ---- -- -  -    -
 ** viewport
 ** -------- ---- -- -  -    -
 */
@@ -301,6 +293,11 @@ img
 	color: #fff;
 }
 
+.footer a
+{
+	color: #fff;
+}
+
 .footer-banner
 {
 	overflow: hidden;
@@ -325,6 +322,18 @@ img
 	line-height: 1.5;
 }
 
+.footer-smallprint
+{
+	padding: 2em 0;
+	border-top: 1px solid #383838;
+}
+
+.footer-smallprint .copyright,
+.footer-smallprint .cookies
+{
+	font-size: 0.75em;
+	text-align: center;
+}
 
 
 /* ---- -- -  -    -

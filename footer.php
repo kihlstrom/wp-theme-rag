@@ -7,6 +7,10 @@
 		</div>
 	</div>
 	<div class="footer-smallprint">
+		<div class="inside">
+			<p class="copyright">Copyright &copy; 2012 Real Art Group</p>
+			<!--p class="cookies">We use cookies. <a href="#">Want to know more?</a></p-->
+		</div>
 	</div>
 </div>
 
