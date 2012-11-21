@@ -18,7 +18,7 @@
 	<div class="inside">
 		<h1><a href="#"><img src="<?php echo THEME_DIR; ?>/images/rag-logo145x108.png" width="145" height="108" alt="Real Art Group"><span>Real Art Group</span></a></h1>
 		<ul class="nav-main">
-			<?php wp_list_pages( 'sort_column=menu_order&depth=1&echo=1&title_li=' ); ?>
+			<?php wp_list_pages( 'sort_column=menu_order&depth=1&echo=1&title_li=&exclude=' . url_to_postid( 'cookies' ) ); ?>
 		</ul>
 		<!--
 		<form id="header-form-search" method="get" action="">
