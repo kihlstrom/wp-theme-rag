@@ -121,7 +121,24 @@ img
 .nav-main .current_page_item a
 {
 	border-bottom: 4px solid #f6e128;
-}	
+}
+
+
+
+/* ---- -- -  -    -
+** breadcrumbs
+** -------- ---- -- -  -    -
+*/
+.breadcrumbs
+{
+	background: #1e1e1e;
+	color: #fff;
+}
+.breadcrumbs .inside
+{
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
 
 
 
@@ -398,7 +415,7 @@ img
 	{
 		position: absolute;
 		bottom: 20px;
-		right: 0;
+		right: 4%;
 	}
 	.post .heading h2
 	{
@@ -448,6 +465,7 @@ img
 @media only screen and (min-width: 66em)
 {
 	.inside { padding-right: 0; padding-left: 0; }
+	.nav-main { right: 0; }
 	.nav-main li { margin-left: 2em; }
 }
 
