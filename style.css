@@ -325,16 +325,27 @@ img
 
 .footer-smallprint
 {
-	padding: 2em 0;
+	padding-top: 2em;
 	border-top: 1px solid #383838;
+	overflow: hidden;
 }
 
 .footer-smallprint p
 {
+	float: left;
+	-x-margin: 0 1em;
+	padding: 0 40px;
+	min-height: 28px;
 	font-size: 0.75em;
-	line-height: 1.5;
+	line-height: 28px;
 	text-align: center;
 }
+
+.footer-smallprint .cookies
+{
+	background: url(images/cookie-white29x28.png) 0 50% no-repeat;
+}
+
 
 
 /* ---- -- -  -    -
