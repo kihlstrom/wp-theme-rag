@@ -123,6 +123,13 @@ img
 	border-bottom: 4px solid #f6e128;
 }
 
+.nav-main li a:hover
+{
+	border-bottom: 4px solid #ffe929;
+	color: #000;
+	text-shadow: 0 0 1em rgba( 0, 0, 0, 0.3882 );
+}
+
 
 
 /* ---- -- -  -    -
@@ -245,6 +252,12 @@ img
 .post .heading img
 {
 	vertical-align: bottom;
+}
+
+.post a:hover .heading h2
+{
+	color: #000;
+	text-shadow: 0 0 0.25em rgba( 0, 0, 0, 0.3882 );
 }
 
 .post .heading h2
