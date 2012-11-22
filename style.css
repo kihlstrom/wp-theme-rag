@@ -141,10 +141,21 @@ img
 	background: #1e1e1e;
 	color: #fff;
 }
+
 .breadcrumbs .inside
 {
 	padding-top: 1em;
 	padding-bottom: 1em;
+}
+
+.breadcrumbs a
+{
+	color: #fff;
+}
+
+.breadcrumbs span
+{
+	color: #f6e128;
 }
 
 
