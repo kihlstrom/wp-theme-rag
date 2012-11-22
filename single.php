@@ -10,6 +10,7 @@
 	<div class="inside">
 		<div class="single">
 
+			<div class="post">
 				<div class="heading">
 					<h2><?php echo rag_title_split( get_the_title(), 24 ); ?></h2>
 					<div class="date"><span><?php the_date(); ?></span></div>
@@ -17,6 +18,7 @@
 
 <?php the_content(); ?>
 
+			</div>
 		</div>
 	</div>
 </div>

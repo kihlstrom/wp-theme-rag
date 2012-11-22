@@ -329,24 +329,10 @@ img
 }
 .single .heading h2
 {
-	float: left;
-	border-left: 4px solid #f6e128;
-	font-family: 'Oswald', Arial, Helvetica, sans-serif;
-	font-size: 32px;
-	line-height: 1;
-	overflow: hidden;
+	position: relative;
+	left: auto;
+	bottom: auto;
 }
-
-.single .heading h2 span
-{
-	float: left;
-	clear: left;
-	display: block;
-	padding: 4px 8px;
-	background: #f6e128 url(images/diagonal-yellow8x8.png) 0 0 repeat;
-	color: #1e1e1e;
-}
-
 
 
 
