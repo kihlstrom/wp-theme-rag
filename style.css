@@ -81,7 +81,7 @@ img
 .header .inside
 {
 	min-height: 108px;
-	padding-top: 17px;
+	padding-top: 10px;
 	padding-bottom: 20px;
 }
 
@@ -140,6 +140,8 @@ img
 {
 	background: #1e1e1e;
 	color: #fff;
+	-x-font-family: 'Oswald', Arial, Helvetica, sans-serif;
+	font-family: 'Quicksand', Arial, Helvetica, sans-serif;
 }
 
 .breadcrumbs .inside
@@ -256,7 +258,7 @@ img
 
 .post .heading
 {
-	min-height: 150px;
+	min-height: 128px;
 	text-align: center;
 }
 
@@ -318,12 +320,6 @@ img
 	line-height: 1.5;
 }
 
-.post .content
-{
-	clear: both;
-	margin-top: 1em;
-}
-
 
 
 /* ---- -- -  -    -
@@ -344,6 +340,19 @@ img
 	position: relative;
 	left: auto;
 	bottom: auto;
+}
+
+.single .date
+{
+	max-width: 42.857142857142857em;
+}
+
+.single .content
+{
+	clear: both;
+	max-width: 37.5em;
+	margin-top: 1em;
+	line-height: 1.5;
 }
 
 
@@ -451,7 +460,7 @@ img
 	.header h1 img
 	{
 		left: -10px;
-		top: 0px;
+		top: 0;
 	}
 	.nav-main
 	{
@@ -459,18 +468,10 @@ img
 		bottom: 20px;
 		right: 4%;
 	}
-	.post .heading h2
-	{
-		font-size: 32px;
-	}
-	.single .heading h2
-	{
-		font-size: 48px;
-	}
-	.single .heading h2 span
-	{
-		padding: 8px 16px;
-	}
+	.post .heading { min-height: 160px; }
+	.post .heading h2 { font-size: 32px; }
+	.single .heading h2 { font-size: 48px; }
+	.single .heading h2 span { padding: 8px 16px; }
 	.footer-banner
 	{
 		padding: 2em 0;
@@ -500,7 +501,13 @@ img
 		padding-left: 9px;
 		border-left: 1px solid #d7d7d7;
 	}
-	.sidebar {
+	.single
+	{
+		padding-left: 9px;
+		border-left: 1px solid #d7d7d7;
+	}
+	.sidebar
+	{
 		float: right;
 		width: 32.5%;
 	}
@@ -550,8 +557,10 @@ img
 		background: #f6e128;
 		color: #1e1e1e;
 	}
-	.footer .inside
+	.single .date
 	{
-		max-width: 70em;
+		top: 0;
+		bottom: auto;
 	}
+	.footer .inside { max-width: 70em; }
 }

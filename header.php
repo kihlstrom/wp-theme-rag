@@ -16,7 +16,7 @@
 
 <div class="header">
 	<div class="inside">
-		<h1><a href="<?php bloginfo('url'); ?>"><img src="<?php echo THEME_DIR; ?>/images/rag-logo145x108.png" width="145" height="108" alt="Real Art Group"><span>Real Art Group</span></a></h1>
+		<h1><a href="<?php bloginfo('url'); ?>"><img src="<?php echo THEME_DIR; ?>/images/rag-logo145x115.png" width="145" height="115" alt="Real Art Group"><span>Real Art Group</span></a></h1>
 		<ul class="nav-main">
 <?php
 $id_exclude = url_to_postid( 'cookies' );
