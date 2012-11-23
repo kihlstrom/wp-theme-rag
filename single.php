@@ -6,7 +6,7 @@
 	</div>
 </div>
 
-<div class="content">
+<div class="wrap">
 	<div class="inside">
 		<div class="single">
 
@@ -15,9 +15,9 @@
 					<h2><?php echo rag_title_split( get_the_title(), 24 ); ?></h2>
 					<div class="date"><span><?php the_date(); ?></span></div>
 				</div>
-
-<?php the_content(); ?>
-
+				<div class="content">
+					<?php the_content(); ?>
+				</div>
 			</div>
 		</div>
 	</div>

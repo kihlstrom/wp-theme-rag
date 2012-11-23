@@ -1,4 +1,4 @@
-﻿/*
+/*
 Theme Name: RAG
 Description: Theme by and for The Real Art Group
 Version: 0.1
@@ -222,10 +222,10 @@ img
 
 
 /* ---- -- -  -    -
-** content
+** wrap
 ** -------- ---- -- -  -    -
 */
-.content
+.wrap
 {
 	padding-top: 2em;
 	overflow: hidden;
@@ -318,6 +318,12 @@ img
 	line-height: 1.5;
 }
 
+.post .content
+{
+	clear: both;
+	margin-top: 1em;
+}
+
 
 
 /* ---- -- -  -    -
@@ -327,6 +333,12 @@ img
 .single
 {
 }
+
+.single .heading h2
+{
+	overflow: hidden;
+}
+
 .single .heading h2
 {
 	position: relative;

@@ -10,7 +10,7 @@ get_header();
 	</div>
 </div>
 
-<div class="content">
+<div class="wrap">
 	<div class="inside">
 		<div class="main">
 <?php
