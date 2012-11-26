@@ -14,7 +14,7 @@
 				<div class="heading">
 					<h2><?php rag_title_divider( get_the_title(), array( 20, 24, 25 ) ); ?></h2>
 					<div class="date"><span><?php the_date(); ?></span></div>
-					<div class="author"><span>Author: <?php the_author(); ?></span></div>
+					<div class="author"><span>Author: <?php the_author_link(); ?></span></div>
 				</div>
 				<div class="content">
 					<?php the_content(); ?>
