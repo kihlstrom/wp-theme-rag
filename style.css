@@ -220,11 +220,12 @@ img
 	z-index: 1;
 }
 
+
+
 /* ---- -- -  -    -
 ** hero-unit
 ** -------- ---- -- -  -    -
 */
-
 .hero-unit
 {
     border-bottom: solid 5px #000;
@@ -246,6 +247,8 @@ img
     color: #888;
     line-height: 1.6;
 }
+
+
 
 /* ---- -- -  -    -
 ** wrap
@@ -269,11 +272,12 @@ img
 	margin: 0 auto 2em auto;
 }
 
+
+
 /* ---- -- -  -    -
 ** cols
 ** -------- ---- -- -  -    -
 */
-
 .col-wrap
 {
 
@@ -288,6 +292,7 @@ img
 {
 
 }
+
 
 
 /* ---- -- -  -    -
@@ -405,6 +410,45 @@ img
 	margin-top: 1em;
 	line-height: 1.5;
 }
+
+
+
+/* ---- -- -  -    -
+** content
+** -------- ---- -- -  -    -
+*/
+.content{color:#333;}
+.content h1,.content h2,.content h3,.content h4,.content h5,.content h6{font-weight:bold; margin:0; display:block;}
+.content h1{font-size:1.8em; line-height:1.8em;}
+.content h2{font-size:1.5em; line-height:1.8em;}
+.content h3{font-size:1.3em; line-height:1.8em;}
+.content h4{font-size:1.15em; line-height:1.8em;}
+.content h5{font-size:1.05em; line-height:1.8em;}
+.content h6{font-size:0.95em; line-height:1.8em;}
+.content strong,b,B{font-weight:bold; font-size:0.92em; line-height:inherit;}
+.content p{font-size:1em; line-height:1.5em; margin:0 0 1em;}
+.content em,.content i,.content I{font-style:italic; font-size:inherit; line-height:inherit; color:#000;}
+.content small{font-size:0.8em; line-height:inherit;}
+.content small.by{margin:0 0 20px 20px; display:block; font-style:italic;}
+.content sub{vertical-align:sub; font-size:0.7em;}
+.content sup{vertical-align:super; font-size:0.7em;}
+.content del{text-decoration:line-through; font-size:0.9em; color:#888;}
+.content ins{text-decoration:none; border-bottom:1px dashed #777; font-style:italic; color:#000;}
+.content q,.content blockquote{font-size:1.2em; border-left:5px solid #f6e128; line-height:1.5em; color:#000; font-style:italic; display:block; margin:10px 0; padding:0 20px 0 15px;}
+.content br{line-height:inherit; margin:0 0 10px 0;}
+.content img{max-width:100%;}
+.content a,.content a:link{text-decoration:none; color:#000; font-size:0.9em; font-weight:bold; padding:1px 5px; background:#f8ec87;}
+.content a:visited{}
+.content a:hover{text-decoration:underline;}
+.content a:active{background:#f6e128;}	
+.content code{}
+.content pre{}
+.content pre.code{width:100%; margin:0 0 10px 0; border-left:3px solid #000; background:url('images/code-bg-bw.jpg') repeat center top;}
+.content pre.code code{display:block; margin:0px 15px; color:#000; font-size:14px; line-height:20px; family:Consolata, monospace;}
+.content ul{display:block; margin:10px 0; padding:0 0 0 30px; list-style-type:disc;}
+.content ul li{margin:5px 0;}
+.content ol{display:block; margin:10px 0; list-style-type:decimal-leading-zero; padding:0 0 0 30px;}
+.content ol li{margin:5px 0;}
 
 
 
