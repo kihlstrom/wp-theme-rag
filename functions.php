@@ -9,6 +9,13 @@ function insert_jquery() {
    wp_enqueue_script( 'jquery' );
 }
 
+// Fix for ugly excerpt no more -> [....]
+function new_excerpt_more($more) {
+    global $post;
+	return ' <a class="read-more-link" href="'. get_permalink($post->ID) . '">Read the Rest...</a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
 function rag_breadcrumbs( $post, $separator ) {
 	$id_parent = ( $post->post_parent ? $post->post_parent : $post->ID );
 	$nav_sub_list = wp_list_pages( 'sort_column=menu_order&depth=1&echo=0&title_li=&child_of=' . $id_parent );
