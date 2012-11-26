@@ -330,15 +330,16 @@ img
 
 .post .date
 {
-	float: left;
-	width: 100%;
-	margin-bottom: 1em;
-	padding-top: 0.28571428571429em;
-	padding-bottom: 0.28571428571429em;
+	float: right;
+	-x-width: 100%;
+	-x-margin-bottom: 1em;
+	-x-padding-top: 0.28571428571429em;
+	-x-padding-bottom: 0.28571428571429em;
 	font-family: 'Oswald', Arial, Helvetica, sans-serif;
-	font-size: 0.875em;
-	background: #1e1e1e;
-	color: #f6e128;
+	-x-font-size: 0.875em;
+	font-size: 0.8125em;
+	-x-background: #1e1e1e;
+	-x-color: #f6e128;
 }
 
 .post .date span
@@ -348,7 +349,7 @@ img
 
 .post .author
 {
-	clear: both;
+	clear: left;
 	font-family: 'Oswald', Arial, Helvetica, sans-serif;
 	font-size: 0.8125em;
 	text-align: left;
@@ -721,6 +722,7 @@ img
 		top: auto;
 		bottom: 0;
 		text-align: center;
+		font-size: 0.875em;
 		background: transparent url(images/triangle-yellow12x11.png) right bottom no-repeat;
 	}
 	.post .date span
