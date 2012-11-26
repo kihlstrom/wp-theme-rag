@@ -12,7 +12,7 @@
 
 			<div class="post">
 				<div class="heading">
-					<h2><?php echo rag_title_split( get_the_title(), 24 ); ?></h2>
+					<h2><?php rag_title_divider( get_the_title(), array( 20, 24, 25 ) ); ?></h2>
 					<div class="date"><span><?php the_date(); ?></span></div>
 					<div class="author"><span>Author: <?php the_author(); ?></span></div>
 				</div>

@@ -23,6 +23,35 @@ function rag_breadcrumbs( $post, $separator ) {
 	return( $html );
 }
 
+//String to divide :: Max Char per line as array :: Divide with html-tag :: output echo or return
+function rag_title_divider( $titleString = '', $maxChar = array(30,40), $divideHtml = 'span', $returnOrEcho = 'echo' ){
+	if($titleString == ''){
+		$outPutStr = '';
+	}else if(strlen($titleString) < $maxChar[0]){
+		$outPutStr = '<'.$divideHtml.'>'.$titleString.'</'.$divideHtml.'>';
+	}else{
+		$wordArr = explode(' ',$titleString);
+		$wordArrLength = count($wordArr);
+		$i = 0; $ii = 0; $maxCharCount = count($maxChar) - 1; $outPutStr = '<'.$divideHtml.'>'; $trackWordLength = 0;
+		while($i != $wordArrLength){
+			$trackWordLength += strlen($wordArr[$i]);		
+			if($trackWordLength < $maxChar[$ii]){
+				$outPutStr .= $wordArr[$i].' ';
+				$i += 1;
+				if($i == $wordArrLength){$outPutStr = substr_replace($outPutStr,"",-1).'</'.$divideHtml.'>';}
+			}else{
+				$trackWordLength = 0;
+				$outPutStr .= '</'.$divideHtml.'><'.$divideHtml.'>';
+				if($maxCharCount > 0 && $ii != $maxCharCount ){
+					 $ii += 1;
+				}
+			}	
+		}
+	}
+	if($returnOrEcho == 'echo'){ echo $outPutStr; }else{ return $outPutStr;}
+}
+
+/*
 function rag_title_split( $title, $max_characters_per_row ) {
 	$max_words_per_row = 4;
 	$title_word = explode( ' ', $title );
@@ -39,5 +68,6 @@ function rag_title_split( $title, $max_characters_per_row ) {
 function rag_title_row_join( $row ) {
 	return( implode( ' ', $row ) );
 }
+*/
 
 ?>
