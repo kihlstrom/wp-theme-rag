@@ -283,6 +283,11 @@ img
 	margin-top: 2em;
 }
 
+.post > a
+{
+	text-decoration: none;
+}
+
 .post .heading
 {
 	min-height: 128px;
