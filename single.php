@@ -23,6 +23,11 @@
 
 		</div>
 	</div>
+	<div class="nav-post">
+		<a class="prev" href="#">Previous</a>
+		<a class="next" href="#">Next</a>
+		<!--a class="next" href="#"><?php next_post_link( '%link', 'Next' ); ?></a-->
+	</div>
 </div>
 
 <?php get_footer(); ?>
