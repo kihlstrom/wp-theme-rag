@@ -7,7 +7,7 @@ Author URI: http://realartgroup.org
 */
 
 /* Reset css by Eric meyer http://meyerweb.com/eric/tools/css/reset/ v2.0 License: none (public domain) */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}body{line-height:1;}ol,ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:none;}table{border-collapse:collapse;border-spacing:0;}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video,textarea{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}body{line-height:1;}ol,ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:none;}table{border-collapse:collapse;border-spacing:0;}
 
 
 
@@ -800,5 +800,58 @@ a.more:hover
 		margin: 0;
 		padding: 0;
 	}
+	/* comments block */
+	
+#comments{width:100%; max-width:37.5em;}	
+
+#comment-devider-bar{position:relative; margin:30px 0 50px 0; left:-9px; padding:5px 0 0 10px; width:100%; height:45px; background:url(images/diagonal-dark8x8.png) repeat left top;}
+#comment-devider-bar strong{ color:#000; line-height:1.5em; font-size:1.5em; font-family: 'Oswald', Arial, Helvetica, sans-serif;}
+
+#leav-a-comment{width:100%;  margin:50px 0 30px;}
+#leav-a-comment p{color:#666; font-size:0.9em; line-height:1.5em;}	
+#leav-a-comment strong{color:#000; line-height:2em; font-size:1.3em; font-family: 'Oswald', Arial, Helvetica, sans-serif;}	
+#commentlist{color:#666;}
+#commentlist li{position:relative; width:34em; margin:0 0 30px;}
+#commentlist li .comment-nr{width:50px; height:41px; display:block; font-size:2em; padding-top:7px; text-align:center; color:#000; font-family: 'Oswald', Arial, Helvetica, sans-serif; background:url(images/diagonal-dark8x8.png) repeat left top; position:absolute; left:-60px; top:5px;}
+#commentlist li .comment-author{color:#000; font-family: 'Oswald', Arial, Helvetica, sans-serif; font-size:1em; line-height:1.6em;}
+#commentlist li .comment-author a{}
+#commentlist .date{font-style:italic; font-size:0.8em; margin:0 0 0 10px;}
+#commentlist .comment-body{font-size:0.9em; line-height:1.5em; margin:5px 0 0 0;}
+#commentlist .comment-body p{}
+/* comment form */
+#comment-form{}
+#comment-form .comment-form-oneline-feild{height:36px; padding:0 0 0 10px; color:#b2b2b2; font-size:0.9em; margin:0 0 10px; width:356px; border:1px solid #d7d7d7;}
+#comment-form-textarea{width:100%; min-height:150px; padding:10px; color:#b2b2b2; font-size:0.9em; margin:0 0 10px; min-width:200px; max-width:446px;  border:1px solid #d7d7d7;}
+#comment-form-submit{padding:5px 20px; border:none; float:right; font-size:1em; font-family: 'Oswald', Arial, Helvetica, sans-serif; color:#000; background:url(images/diagonal-yellow8x8.png) repeat center top;}
+#comment-form-submit-preveiw-btn{width:29.4em;}
+
+
+	
+	/* footer */
 	.footer .inside { max-width: 70em; }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

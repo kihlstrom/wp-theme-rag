@@ -20,7 +20,8 @@
 					<?php the_content(); ?>
 				</div>
 			</div>
-
+			
+<?php comments_template( '', true ); ?>
 		</div>
 	</div>
 	<div class="nav-post">
