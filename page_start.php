@@ -24,6 +24,7 @@ if( have_posts() ) {
 					<?php echo get_image( 'start_page_image' ); ?>
 					<h2><?php rag_title_divider( get_the_title(), array( 20, 24, 25 ) ); ?></h2>
 					<div class="date"><span><?php the_date(); ?></span></div>
+					<div class="comments" ><?php comments_number( 'x','1'); ?></div>
 					<div class="author"><span>Author: <?php the_author_link(); ?></span></div>
 				</div></a>
 				<div class="intro ">

@@ -347,6 +347,22 @@ img
 	margin-left: 0.28571428571429em;
 }
 
+.post .comments{
+	background:url("images/post-comments31x33.png") no-repeat 2px top;
+	width:33px; 
+	height:33px;
+	position:absolute;
+	top:10px;
+	right:10px;
+	z-index:1;
+	font-family: 'Oswald', Arial, Helvetica, sans-serif;
+	font-size:0.8em;
+	text-align:center;
+	color:#333;
+	padding-top:9px;
+}
+
+
 .post .author
 {
 	clear: left;
