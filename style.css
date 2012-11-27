@@ -310,7 +310,7 @@ img
 	position: absolute;
 	float: left;
 	left: 0;
-	bottom: 20px;
+	bottom: 32px;
 	border-left: 4px solid #f6e128;
 	font-family: 'Oswald', Arial, Helvetica, sans-serif;
 	font-size: 24px;
@@ -331,25 +331,15 @@ img
 .post .date
 {
 	float: right;
-	-x-width: 100%;
-	-x-margin-bottom: 1em;
-	-x-padding-top: 0.28571428571429em;
-	-x-padding-bottom: 0.28571428571429em;
+	padding-top: 0.5em;
 	font-family: 'Oswald', Arial, Helvetica, sans-serif;
-	-x-font-size: 0.875em;
 	font-size: 0.8125em;
-	-x-background: #1e1e1e;
-	-x-color: #f6e128;
 }
 
-.post .date span
+.post .comments
 {
-	margin-left: 0.28571428571429em;
-}
-
-.post .comments{
-	background:url("images/post-comments31x33.png") no-repeat 2px top;
-	width:33px; 
+	background: url(images/post-comments31x33.png) 2px top no-repeat;
+	width:33px;
 	height:33px;
 	position:absolute;
 	top:10px;
@@ -362,10 +352,10 @@ img
 	padding-top:9px;
 }
 
-
 .post .author
 {
 	clear: left;
+	padding-top: 0.5em;
 	font-family: 'Oswald', Arial, Helvetica, sans-serif;
 	font-size: 0.8125em;
 	text-align: left;
@@ -376,6 +366,8 @@ img
 	margin-top: 1em;
 	line-height: 1.5;
 }
+
+
 
 /* ---- -- -  -    -
 ** single
@@ -728,6 +720,7 @@ img
 {
 	.header h1 img { left: -135px; }
 	.nav-main li { margin-left: 3em; }
+	.post .heading h2 { bottom: 32px; }
 	.post .date
 	{
 		float: none;
@@ -745,7 +738,6 @@ img
 	{
 		display: block;
 		width: 92px;
-		margin: 0;
 		padding: 0.28571428571429em 4px;
 		background: #f6e128;
 		color: #1e1e1e;
@@ -754,10 +746,6 @@ img
 	{
 		top: 0;
 		bottom: auto;
-	}
-	.post .author
-	{
-		padding-top: 0.5em;
 	}
 	.footer .inside { max-width: 70em; }
 }
