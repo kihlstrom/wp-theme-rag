@@ -191,22 +191,6 @@ img
 	line-height: 1.25;
 }
 
-.pusher p a
-{
-	display: inline-block;
-	padding: 0 0.5em;
-	background: #f6e128;
-	color: #1e1e1e;
-	text-decoration: none;
-	font-size: 0.875em;
-}
-
-.pusher p a:hover
-{
-	background: #ffe929;
-	color: #000;
-}
-
 .noscript .pusher .close { display: none; }
 .script .pusher .close
 {
@@ -221,6 +205,30 @@ img
 	cursor: pointer;
 	z-index: 1;
 }
+
+
+
+/* ---- -- -  -    -
+** more
+** -------- ---- -- -  -    -
+*/
+a.more
+{
+	display: inline-block;
+	padding: 0 0.5em;
+	background: #f6e128;
+	color: #1e1e1e;
+	text-decoration: none;
+	font-size: 0.875em;
+}
+
+a.more:hover
+{
+	background: #ffe929;
+	color: #000;
+}
+
+
 
 /* ---- -- -  -    -
 ** hero-unit

@@ -25,7 +25,7 @@ function my_editor_style($url) {
 // Fix for ugly excerpt no more -> [....]
 function new_excerpt_more($more) {
     global $post;
-	return ' <a class="read-more-link" href="'. get_permalink($post->ID) . '">Read the Rest...</a>';
+	return ' <a class="more" href="'. get_permalink($post->ID) . '">Read more</a>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
