@@ -20,14 +20,14 @@ if( have_posts() ) {
 		the_post();
 ?>
 			<div class="post">
-				<a href="<?php the_permalink(); ?>"><div class="heading">
+				<a href="<?php the_permalink(); ?>"><div class="post-heading">
 					<?php echo get_image( 'start_page_image' ); ?>
 					<h2><?php rag_title_divider( get_the_title(), array( 20, 24, 25 ) ); ?></h2>
 					<div class="date"><span><?php the_date(); ?></span></div>
 					<div class="comments" ><?php comments_number( 'x','1'); ?></div>
 					<div class="author"><span>Author: <?php the_author(); ?></span></div>
 				</div></a>
-				<div class="intro ">
+				<div class="intro">
 					<?php the_excerpt(); ?>
 				</div>
 			</div>

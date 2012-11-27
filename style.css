@@ -288,24 +288,30 @@ img
 	text-decoration: none;
 }
 
-.post .heading
+
+
+/* ---- -- -  -    -
+** post-heading
+** -------- ---- -- -  -    -
+*/
+.post-heading
 {
 	min-height: 128px;
 	text-align: center;
 }
 
-.post .heading img
+.post-heading img
 {
 	vertical-align: bottom;
 }
 
-.post a:hover .heading h2
+a:hover .post-heading h2
 {
 	color: #000;
 	text-shadow: 0 0 0.25em rgba( 0, 0, 0, 0.3882 );
 }
 
-.post .heading h2
+.post-heading h2
 {
 	position: absolute;
 	float: left;
@@ -318,7 +324,7 @@ img
 	overflow: hidden;
 }
 
-.post .heading h2 span
+.post-heading h2 span
 {
 	float: left;
 	clear: left;
@@ -328,7 +334,7 @@ img
 	color: #1e1e1e;
 }
 
-.post .date
+.post-heading .date
 {
 	float: right;
 	padding-top: 0.5em;
@@ -336,7 +342,7 @@ img
 	font-size: 0.8125em;
 }
 
-.post .comments
+.post-heading .comments
 {
 	background: url(images/post-comments31x33.png) 2px top no-repeat;
 	width:33px;
@@ -352,7 +358,7 @@ img
 	padding-top:9px;
 }
 
-.post .author
+.post-heading .author
 {
 	clear: left;
 	padding-top: 0.5em;
@@ -377,16 +383,16 @@ img
 {
 }
 
-.single .heading h2
+.single .post-heading h2
 {
 	overflow: hidden;
 }
 
-.single .heading h2
+.single .post-heading h2
 {
 	position: relative;
 	left: auto;
-	bottom: auto;
+	bottom: auto !important;
 }
 
 .single .date
@@ -621,10 +627,10 @@ img
 		bottom: 30px;
 		right: 4%;
 	}
-	.post .heading { min-height: 160px; }
-	.post .heading h2 { font-size: 32px; }
-	.single .heading h2 { font-size: 48px; }
-	.single .heading h2 span { padding: 8px 16px; }
+	.post-heading { min-height: 160px; }
+	.post-heading h2 { font-size: 32px; }
+	.single .post-heading h2 { font-size: 48px; }
+	.single .post-heading h2 span { padding: 8px 16px; }
 	.footer-banner
 	{
 		padding: 2em 0;
@@ -720,8 +726,8 @@ img
 {
 	.header h1 img { left: -135px; }
 	.nav-main li { margin-left: 3em; }
-	.post .heading h2 { bottom: 32px; }
-	.post .date
+	.post-heading h2 { bottom: 32px; }
+	.post-heading .date
 	{
 		float: none;
 		position: absolute;
@@ -734,7 +740,7 @@ img
 		font-size: 0.875em;
 		background: transparent url(images/triangle-yellow12x11.png) right bottom no-repeat;
 	}
-	.post .date span
+	.post-heading .date span
 	{
 		display: block;
 		width: 92px;
@@ -742,7 +748,7 @@ img
 		background: #f6e128;
 		color: #1e1e1e;
 	}
-	.single .date
+	.single .post-heading .date
 	{
 		top: 0;
 		bottom: auto;

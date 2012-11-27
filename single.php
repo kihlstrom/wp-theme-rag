@@ -11,7 +11,7 @@
 		<div class="single">
 
 			<div class="post">
-				<div class="heading">
+				<div class="post-heading">
 					<h2><?php rag_title_divider( get_the_title(), array( 20, 24, 25 ) ); ?></h2>
 					<div class="date"><span><?php the_date(); ?></span></div>
 					<div class="author"><span>Author: <?php the_author_link(); ?></span></div>
