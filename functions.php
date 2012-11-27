@@ -9,6 +9,19 @@ function insert_jquery() {
    wp_enqueue_script( 'jquery' );
 }
 
+//edit css styles
+add_filter('mce_css', 'my_editor_style');
+function my_editor_style($url) {
+
+  if ( !empty($url) )
+    $url .= ',';
+
+  // Change the path here if using sub-directory
+  $url .= trailingslashit( get_stylesheet_directory_uri() ) . 'editor-style.css';
+
+  return $url;
+}
+
 // Fix for ugly excerpt no more -> [....]
 function new_excerpt_more($more) {
     global $post;
