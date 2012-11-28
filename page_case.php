@@ -12,8 +12,7 @@ get_header();
 <div class="wrap">
 	<div class="inside">
 		<div class="hero-unit">
-            <h2>Case & Concept</h2>
-            <p>We made all these kittens! We are awesome! </p>
+            <?php the_content(); ?>
         </div>
         <div class="case-collection col-wrap col-three">
             <div class="col">
