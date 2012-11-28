@@ -12,12 +12,12 @@ function insert_jquery() {
 }
 
 
-
+/*
 add_filter( 'the_permalink', 'root_relative_permalinks' );
 function root_relative_permalinks( $input ) {
     return make_href_root_relative( $input );
 }
-
+*/
 
 
 //edit css styles

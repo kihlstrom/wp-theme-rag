@@ -25,10 +25,10 @@ if( have_posts() ) {
 					<h2><a href="<?php the_permalink(); ?>"><?php rag_title_divider( get_the_title(), array( 20, 24, 25 ) ); ?></a></h2>
 					<div class="date"><span><?php the_date(); ?></span></div>
 					<div class="comments" ><?php comments_number( 'x','1','%'); ?></div>
-					<div class="author"><span>Author: <?php the_author(); ?></span></div>
+					<div class="author"><span>Author: <?php  the_author(); ?></span></div>
 				</div>
 				<div class="intro">
-					<?php the_excerpt(); ?>
+					<?php  the_excerpt(); ?>
 				</div>
 			</div>
 <?php
