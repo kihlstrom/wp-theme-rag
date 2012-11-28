@@ -25,13 +25,27 @@
 		</div>
 	</div>
 	<div class="nav-post">
-		<a class="prev" href="#">Previous</a>
-		<a class="next" href="#">
-			<span class="sign">&gt;</span>
-			<span>Next:</span>
-			<span>Title of next post that could be a really long</span>
+<?php
+$previous_post = get_adjacent_post( false, '', true );
+$next_post = get_adjacent_post( false, '', false );
+if( $previous_post ) { ?>
+		<a class="prev" href="<?php echo get_permalink( $previous_post ); ?>">
+			<span class="sign">&lt;</span>
+			<span>Previous post:</span>
+			<span><?php echo get_the_title( $previous_post ); ?></span>
 		</a>
-		<!--a class="next" href="#"><?php next_post_link( '%link', 'Next' ); ?></a-->
+<?php
+}
+if( $next_post ) {
+?>
+		<a class="next" href="<?php echo get_permalink( $next_post ); ?>">
+			<span class="sign">&gt;</span>
+			<span>Next post:</span>
+			<span><?php echo get_the_title( $next_post ); ?></span>
+		</a>
+<?php
+}
+?>
 	</div>
 </div>
 

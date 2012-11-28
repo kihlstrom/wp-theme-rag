@@ -3,14 +3,25 @@
 define( 'THEME_DIR', get_template_directory_uri() );  
 
 remove_action( 'wp_head', 'wp_generator' );
-add_filter( 'wp_head', 'insert_jquery' );
 
+
+
+add_filter( 'wp_head', 'insert_jquery' );
 function insert_jquery() {
    wp_enqueue_script( 'jquery' );
 }
 
+
+
+add_filter( 'the_permalink', 'root_relative_permalinks' );
+function root_relative_permalinks( $input ) {
+    return make_href_root_relative( $input );
+}
+
+
+
 //edit css styles
-add_filter('mce_css', 'my_editor_style');
+add_filter( 'mce_css', 'my_editor_style' );
 function my_editor_style($url) {
 
   if ( !empty($url) )
@@ -22,12 +33,16 @@ function my_editor_style($url) {
   return $url;
 }
 
+
+
 // Fix for ugly excerpt no more -> [....]
-function new_excerpt_more($more) {
+function rag_excerpt_more($more) {
     global $post;
 	return ' <a class="more" href="'. get_permalink($post->ID) . '">Read more</a>';
 }
-add_filter('excerpt_more', 'new_excerpt_more');
+add_filter('excerpt_more', 'rag_excerpt_more');
+
+
 
 function rag_breadcrumbs( $post, $separator ) {
 	$id_parent = ( $post->post_parent ? $post->post_parent : $post->ID );
@@ -42,6 +57,8 @@ function rag_breadcrumbs( $post, $separator ) {
 	wp_reset_query();
 	return( $html );
 }
+
+
 
 //String to divide :: Max Char per line as array :: Divide with html-tag :: output echo or return
 function rag_title_divider( $titleString = '', $maxChar = array(30,40), $divideHtml = 'span', $returnOrEcho = 'echo' ){
