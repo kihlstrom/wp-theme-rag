@@ -493,6 +493,24 @@ a.more:hover
 	max-width: 60em;
 	margin: 0 auto;
 	padding: 0 4% 0 4%;
+	z-index: -1;
+}
+
+.nav-post a
+{
+	display: block;
+	max-width: 20%;
+	padding: 0.5em;
+	background: #1e1e1e;
+	color: #fff;
+	font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	border-radius: 0.25em;
+}
+
+.nav-post a:hover
+{
+	text-decoration: underline;
 }
 
 .nav-post .prev
@@ -505,6 +523,27 @@ a.more:hover
 {
 	float: right;
 	margin-right: 1em;
+}
+
+.nav-post span
+{
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.nav-post .sign
+{
+	float: left;
+	padding: 0 0.5em 0 0.25em;
+	font-size: 2em;
+}
+
+.nav-post .sign + span
+{
+	font-size: 0.875em;
+	line-height: 1.14285714285714;
 }
 
 
