@@ -22,7 +22,13 @@
 $id_exclude = url_to_postid( 'cookies' );
 wp_list_pages( 'sort_column=menu_order&depth=1&echo=1&title_li=&exclude=' . $id_exclude );
 ?>
+<li><a id="search-icon-btn" href="#" title=""></a></li>
+
 		</ul>
+		
+		
+		
+		
 		<!--
 		<form id="header-form-search" method="get" action="">
 			<input type="text" name="search" value="">

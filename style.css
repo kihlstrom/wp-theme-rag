@@ -130,6 +130,12 @@ img
 	text-shadow: 0 0 1em rgba( 0, 0, 0, 0.3882 );
 }
 
+/* ---- -- -  -    -
+** search header
+** -------- ---- -- -  -    -
+*/
+#search-icon-btn{text-decoration:none; padding:20px; position:relative; top:18px; background:url(images/serach-icon36x35.png) no-repeat left top;}
+#search-icon-btn:hover{border:none; padding-top:24px;}
 
 
 /* ---- -- -  -    -
@@ -890,7 +896,7 @@ a.more:hover
 #list-categorys ul li a{background:url(images/diagonal-light8x8.png) repeat left top; text-decoration:none; display:block; padding:15px 10px;}
 #list-categorys ul li a:hover{ /*background:url(images/diagonal-yellow8x8.png) repeat left top;*/ }
 #list-categorys ul li a strong{font-family: 'Oswald', Arial, Helvetica, sans-serif; font-size:1em; line-height:1.6em;}
-#list-categorys ul li a .nummber-post-in-category{font-family:Arial, Helvetica, sans-serif; font-size:0.9em; float:right;}
+#list-categorys ul li a .nummber-post-in-category{font-family:Arial, Helvetica, sans-serif; font-size:0.9em; display:block; margin-top:5px; float:right;}
 #list-categorys ul li a p{font-size:0.8em; line-height:1.3em;}
 
 
