@@ -44,9 +44,10 @@ if( have_posts() ) {
 }
 ?>
 		</div>
-		<div class="sidebar">
-			<h2><span>Categories</span></h2>
-		</div>
+		
+		<?php get_sidebar(); ?>
+	
+		
 	</div>
 </div>
 

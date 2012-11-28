@@ -879,6 +879,24 @@ a.more:hover
 #comment-form-submit-preveiw-btn{width:29.4em;}
 
 
+
+
+    /* sidebar */
+.sidebar-part{width:100%;}	
+/* list-catgorys */
+#list-categorys{}
+#list-categorys ul{ }
+#list-categorys ul li{border-bottom:1px solid #ccc; width:100%; }
+#list-categorys ul li a{background:url(images/diagonal-light8x8.png) repeat left top; text-decoration:none; display:block; padding:15px 10px;}
+#list-categorys ul li a:hover{ /*background:url(images/diagonal-yellow8x8.png) repeat left top;*/ }
+#list-categorys ul li a strong{font-family: 'Oswald', Arial, Helvetica, sans-serif; font-size:1em; line-height:1.6em;}
+#list-categorys ul li a .nummber-post-in-category{font-family:Arial, Helvetica, sans-serif; font-size:0.9em; float:right;}
+#list-categorys ul li a p{font-size:0.8em; line-height:1.3em;}
+
+
+
+
+
 	
 	/* footer */
 	.footer .inside { max-width: 70em; }
