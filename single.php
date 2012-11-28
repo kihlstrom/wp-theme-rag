@@ -28,7 +28,7 @@
 		<a class="prev" href="#">Previous</a>
 		<a class="next" href="#">
 			<span class="sign">&gt;</span>
-			<span>Next</span>
+			<span>Next:</span>
 			<span>Title of next post that could be a really long</span>
 		</a>
 		<!--a class="next" href="#"><?php next_post_link( '%link', 'Next' ); ?></a-->
