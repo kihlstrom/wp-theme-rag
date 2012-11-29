@@ -1,9 +1,9 @@
 <div class="footer">
 	<div class="footer-banner">
 		<div class="inside">
-			<img src="<?php echo THEME_DIR; ?>/images/rag-by-mogul135x129.png" width="135" height="129" alt="Real Art Group by MOGUL">
-			<h3>What is real art group and why?</h3>
-			<p>Lorem ipsu m dolor sit amet, consectetur adipiscing elit. Vivamus aliquam, dolor vel tincidunt dapibus, dolor risus euismod dolor, congue mattis purus lectus ut turpis. luctus eu tempus quis, porta ac sapien. Morbi massa nunc, consequat non consectetur et, ultrices sed dolor. Ut condimentum dui at nisl euismod gravida.</p>
+			<img src="<?php echo THEME_DIR; ?>/images/rag-by-mogul-and-addnode137x144.png" width="137" height="144" alt="Real Art Group by MOGUL">
+			<h3>Footer, the end of the page</h3>
+			<p>You have reached the footer. Not much going on around here at the moment, but you can always read about cookies or scroll <a href="#">back up</a> to where the magic happens. </p>
 		</div>
 	</div>
 	<div class="footer-smallprint">
