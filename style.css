@@ -134,7 +134,7 @@ img
 ** search header
 ** -------- ---- -- -  -    -
 */
-#search-icon-btn{text-decoration:none; padding:20px; position:relative; top:18px; background:url(images/serach-icon36x35.png) no-repeat left top;}
+#search-icon-btn{text-decoration:none; padding:20px; position:relative; top:18px; background:url(images/search-icon36x35.png) no-repeat left top;}
 #search-icon-btn:hover{border:none; padding-top:24px;}
 
 
