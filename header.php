@@ -16,7 +16,18 @@
 
 <div class="header">
 	<div class="inside">
+		
+<?php  if(is_front_page()){ ?>
+		
+		<h1><img src="<?php echo THEME_DIR; ?>/images/rag-logo145x115.png" width="145" height="115" alt="Real Art Group"></h1>
+			
+<?php	}else{ ?>
+		
 		<h1><a href="<?php bloginfo('url'); ?>"><img src="<?php echo THEME_DIR; ?>/images/rag-logo145x115.png" width="145" height="115" alt="Real Art Group"><span>Real Art Group</span></a></h1>
+		
+<?php	} ?>
+		
+		
 		<ul class="nav-main">
 <?php
 $id_exclude = url_to_postid( 'cookies' );
