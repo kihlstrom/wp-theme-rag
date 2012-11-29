@@ -8,7 +8,6 @@
 	<script>document.documentElement.className = document.documentElement.className.replace( 'noscript', 'script' );</script>
 	<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700|Oswald:400,300,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>">
-	<script type="text/javascript" src="<?php echo THEME_DIR; ?>/js/main.js" ></script>	
 	<link rel="shortcut icon" href="<?php echo THEME_DIR; ?>/rag-fav-icon32x32.ico">
 	<?php wp_head(); ?>
 </head>
