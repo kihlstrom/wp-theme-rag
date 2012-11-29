@@ -13,7 +13,7 @@
 		</div>
 	</div>
 </div>
-
+<!--- I hate git --->
 <?php wp_footer(); ?>
 <script type="text/javascript" src="<?php echo THEME_DIR; ?>/js/main.js"></script>
 </body>
