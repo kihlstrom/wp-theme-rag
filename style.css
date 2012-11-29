@@ -507,7 +507,8 @@ a.more:hover
 .nav-post a
 {
 	display: block;
-	max-width: 20%;
+	height: 2em;
+	max-width: 50%;
 	padding: 0.5em;
 	background: #1e1e1e;
 	color: #fff;
@@ -525,13 +526,15 @@ a.more:hover
 .nav-post .prev
 {
 	float: left;
-	margin-left: 1em;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
 }
 
 .nav-post .next
 {
 	float: right;
-	margin-right: 1em;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
 }
 
 .nav-post span
@@ -560,6 +563,21 @@ a.more:hover
 {
 	font-size: 0.875em;
 	line-height: 1.14285714285714;
+}
+
+.script .nav-post a
+{
+	width: 2em;
+}
+
+.script .nav-post a:hover
+{
+	text-decoration: none;
+}
+
+.script .nav-post .next .sign
+{
+	margin-bottom: 1em;
 }
 
 
@@ -880,7 +898,7 @@ a.more:hover
 	.nav-post a
 	{
 		margin: 0;
-		max-width: 12%;
+		max-width: 17%;
 	}
 
 	/* comments block */
