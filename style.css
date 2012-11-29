@@ -395,6 +395,8 @@ a.more:hover
 */
 .single
 {
+	max-width: 47em;
+	margin: 0 auto;
 }
 
 .single .post-heading h2
@@ -798,6 +800,33 @@ a.more:hover
 	.inside { padding-right: 0; padding-left: 0; }
 	.nav-main { right: 0; }
 	.nav-main li { margin-left: 2em; }
+	.single .post-heading h2 { bottom: 32px; }
+	.single .post-heading .date
+	{
+		float: none;
+		position: absolute;
+		width: 100px;
+		padding: 0 0 11px 0;
+		left: -110px;
+		top: auto;
+		bottom: 0;
+		text-align: center;
+		font-size: 0.875em;
+		background: transparent url(images/triangle-yellow12x11.png) right bottom no-repeat;
+	}
+	.single .post-heading .date span
+	{
+		display: block;
+		width: 92px;
+		padding: 0.28571428571429em 4px;
+		background: #f6e128;
+		color: #1e1e1e;
+	}
+	.single .post-heading .date
+	{
+		top: 0;
+		bottom: auto;
+	}
 
     .case-collection .case figure figcaption
         {
@@ -839,15 +868,10 @@ a.more:hover
 		background: #f6e128;
 		color: #1e1e1e;
 	}
-	.single .post-heading .date
-	{
-		top: 0;
-		bottom: auto;
-	}
 	.nav-post
 	{
 		position: fixed;
-		top: 300px;
+		top: 20em;
 		width: 100%;
 		max-width: 100%;
 		margin: 0;
@@ -856,7 +880,7 @@ a.more:hover
 	.nav-post a
 	{
 		margin: 0;
-		width: 12em;
+		max-width: 12%;
 	}
 
 	/* comments block */
