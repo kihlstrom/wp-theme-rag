@@ -50,6 +50,7 @@ img
 	max-width: 100%;
 	border: 0;
 	-ms-interpolation-mode: bicubic;
+	vertical-align: middle;
 }
 
 
@@ -269,7 +270,7 @@ a.more:hover
 */
 .wrap
 {
-	padding-top: 2em;
+	padding: 2em 0;
 	overflow: hidden;
 }
 
@@ -402,10 +403,6 @@ a.more:hover
 .single .post-heading h2
 {
 	overflow: hidden;
-}
-
-.single .post-heading h2
-{
 	position: relative;
 	left: auto;
 	bottom: auto !important;
@@ -652,13 +649,46 @@ a.more:hover
 .case-collection .case:hover .backdrop{opacity: 0.7;}
 
 /* ---- -- -  -    -
+** case simple
+** -------- ---- -- -  -    -
+*/
+
+.simple_case{
+	background: #f7f7f7;
+	line-height: 1.4;
+}
+
+.simple_case h2.headline{
+	font-size: 2em;
+	color: #010101;
+	padding-bottom: 10px;
+}
+
+.simple_case h3{
+	font-size: 1.5em;
+	color: #010101;
+	padding-bottom: 30px;
+	
+}
+
+.simple_case p{
+	padding-top: 30px;
+	font-size: 1em;
+	color: #333;
+}
+
+.simple_case .image-container{
+	text-align: center;
+	padding: 20px 0;
+}
+
+/* ---- -- -  -    -
 ** footer
 ** -------- ---- -- -  -    -
 */
 .footer
 {
 	clear: both;
-	margin-top: 2em;
 	padding: 2em 0;
 	background: #1e1e1e;
 	color: #fff;
@@ -716,11 +746,6 @@ a.more:hover
 	background: url(images/cookie-white29x28.png) 0 50% no-repeat;
 }
 
-.boom-box
-{
-    text-align: center;
-}
-
 /* ---- -- -  -    -
 ** 40em+ ~= 640px+
 ** -------- ---- -- -  -    -
@@ -769,12 +794,46 @@ a.more:hover
         padding-left: 2%;
     }
 
+    .col-two .col
+    {
+        width: 49%;
+        padding-left: 2%;
+    }
+
     .col:first-child
     {
-        float: left;
         padding-left: 0;
 
     }
+	
+
+	/* ---- -- -  -    -
+	** case simple
+	** -------- ---- -- -  -    -
+	*/
+
+	.simple_case h2.headline{
+		font-size: 3em;
+	}
+
+	.simple_case h3{
+		padding-right: 60%;
+	}
+
+	.simple_case p{
+		border-top: 1px solid #b1b1b1;
+	}
+
+	.right-shadow-wrap .col .col-content{padding: 0 0 0 40px; position: relative; z-index: 4;}
+	.right-shadow-wrap .col:first-child .col-content{padding: 0 40px 0 0;}
+
+	.right-shadow-wrap {  position: relative; z-index:4; overflow: hidden;}
+	.right-shadow-wrap .shadow{ position: absolute; width: 90px; right: 50%; z-index:2;}
+	.right-shadow-wrap .shadow.top{top: 0; height: 262px; background: url("images/fold_top.jpg") no-repeat left top; z-index:3;}
+	.right-shadow-wrap .shadow.middle{top: 262px; bottom: 261px; background: url("images/fold_middle.jpg") repeat-y left top;}
+	.right-shadow-wrap .shadow.bottom{bottom: 0; height: 261px; background: url("images/fold_bottom.jpg") no-repeat left top;}
+
+
 }
 
 
