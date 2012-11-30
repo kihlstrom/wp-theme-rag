@@ -619,6 +619,7 @@ a.more:hover
     z-index: 3;
     -webkit-transition: bottom 0.3s;
     -moz-transition: bottom 0.3s;
+    transition: bottom 0.3s;
 }
 
 .case-collection .case .backdrop{
@@ -633,6 +634,7 @@ a.more:hover
     z-index: 2;
     -webkit-transition: opacity 0.3s;
     -moz-transition: opacity 0.3s;
+    transition: opacity 0.3s;
 }
 
 .case-collection .case .backdrop span{
