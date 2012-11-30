@@ -900,6 +900,12 @@ a.more:hover
 		margin: 0;
 		max-width: 17%;
 	}
+	.nav-post.nav-post-at-bottom
+	{
+		position: absolute;
+		top: auto;
+		bottom: 1em;
+	}
 
 	/* comments block */
 	
