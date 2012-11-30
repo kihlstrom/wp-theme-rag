@@ -1,5 +1,5 @@
 <?php
-/* Template name: Single case page simple */ 
+/* Template name: Single case page custom */ 
 get_header();
 ?>
 
